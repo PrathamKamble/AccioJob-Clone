@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+:root{
+    --bs-white: #ffffff;
+    --bs-main-color: #2F80ED;
+    --bs-grey: #595959;
+    --bs-light-grey: #676767;
+    --bs-light-blue: #ECF8FF;
+    --bs-black: #2B2F34;
+    --bs-orange: #FFEED8;
+    --bs-sky-blue: #E0F3FF;
+    --bs-brown: #965400;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    line-height: 150%;
+
+}
+
+section{
+    height: 100vh;
+}
+
+button{
+    background-color: var(--bs-main-color);
+    outline: var(--bs-main-color);
+}
+
+/* Navbar CSS */
+
+.navbar{
+    padding: 15px 0;
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.12);
+}
+
+.icon{
+    color: var(--bs-main-color);
+}
+
+.navbar-toggler:focus{
+    border: 3px solid var(--bs-main-color);
+    box-shadow: none;
+}
+
+.bar{
+    color: var(--bs-white);
+    background-color: var(--bs-main-color);
+}
+
+/* hero--section--css */
+
+#hero-section{
+    height: 100vh;
+}
+
+.hero-head{
+    color: var(--bs-black);
+    font-size: 50px;
+    font-style: italic;
+    line-height: 130%; /* 65px */
+    letter-spacing: -0.75px;   
+}
+
+.hero-span{
+    color: var(--bs-main-color);
+}
+
+.hero-para{
+    width: 492px;
+    color: var(--bs-grey);
+    font-size: 18px;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.36px;
+}
+
+.prog-span{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.red{
+    background-color: #FFE1DF;
+    color: #FF7169;
+}
+
+.org{
+    color: #F88341;
+    background-color: #FFF6DF;
+}
+
+.green{
+    color: #3ECD44;
+    background-color:#DFFFE4;
+}
+
+.blue{
+    color: #4499FE;
+    background-color: #DFF3FF;
+}
+
+.p-head{
+    color: var(--bs-black);
+    font-size: 20px;
+    font-style: italic;
+    line-height: 130%; /* 26px */  
+    margin: 0;  
+}
+
+.p-para{
+    color: #4f4f4f;
+    font-size: 12px;
+    line-height: 155%; /* 18.6px */
+    letter-spacing: 0.12px;
+}
+
+.maker{
+    border-radius: 50px;
+    color: #525252;
+    font-size: 17px;
+    line-height: 150%; /* 21px */
+}
+
+/* form card css */
+
+.form-card > .inputs{
+    padding: 0 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #FAFAFA;
+    color: rgb(130, 130, 130);
+    box-shadow: none;
+}
+
+.form-card > .input-text input,
+.form-card > .input-tel input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+}
+         
+.form-card > .btn-grad {
+    background: var(--New, linear-gradient(277deg, #992FED 0%, #2F80ED 100%));
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+.form-head{
+    color: var(--bs-black);
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 150%; /* 48px */
+    letter-spacing: -0.48px;
+    
+}
+
+.form-para{
+    color: #818D9D;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+}
+
+.terms{
+    color: #818D9D;
+    font-size: 14px;
+    line-height: 150%; /* 21px */
+}
+
+.terms > span{
+    color: var(--bs-main-color);
+}
+
+.form-card{
+    background: #ffffff;
+    position: relative;
+    border-radius: 20px;
+}
+
+.form-card::before{
+    content: "";
+    position: absolute;
+    inset: -.625em;
+    background: linear-gradient(to bottom right, 
+    #2f81eda6, #ff950a98);
+    background: linear-gradient(to top left, 
+    #ff71696e, #945ff67e);
+    background: linear-gradient(to top right, 
+    #ff950a79, #3797d288);
+
+    background: linear-gradient(to bottom left, 
+    #ff716963, #945ff67e);
+    filter: blur(2.5em);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* courses--section--css */
+
+#courses{
+    background-color: var(--bs-light-blue);
+    height: 100vh;
+    padding: 500px 0;
+}
+
+.course-head > p{
+    background: linear-gradient(277deg, #992FED 0%, #2F80ED 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.course-head > h1{
+    color: var(--bs-main-color);
+    font-size: 36px;
+    letter-spacing: -0.54px;
+}
+
+.course-card{
+    background-color: var(--bs-white);
+}
+
+.course-card .beg-info > span{
+    color: var(--bs-main-color);
+    background-color: var(--bs-sky-blue);
+    border-radius: 7px;
+    padding: 6px 15px;
+}
+
+.course-card .interm-info > span{
+    color: var(--bs-brown );
+    background-color: var(--bs-orange);
+    border-radius: 7px;
+    padding: 6px 15px;
+}
+
+.beginner-card{
+    border: 2px solid var(--bs-main-color);
+    position: relative;
+}
+
+.beginner-card::before{
+    content: "Ideal For first-time coders";
+    position: absolute;
+    top: -20px;
+    left: 29%;
+    background-color: var(--bs-main-color);
+    color: var(--bs-white);
+    padding: 5px 12px;
+    border-radius: 7px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.card-paras{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* partners--section--css */
+
+#partners{
+    height: 100vh;
+}
+
+.part-head > span{
+    background: var(--New, linear-gradient(277deg, #992FED 0%, #2F80ED 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.part-head > h1{
+    text-align: center;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%; /* 63px */
+    letter-spacing: -0.63px;
+}
+
+.part-head > h1 > span{
+    color: var(--bs-main-color);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.63px;
+}
+
+.part-head > p{
+    color: var(--bs-grey);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.36px;
+}
+
+/* alumni--section--css */
+
+#alumni{   
+    height: 90vh;
+    padding-bottom: 100px;
+}
+
+.alumni-head > p{
+    color: var(--bs-grey);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%; 
+    letter-spacing: 0.36px;
+}
+
+.icon-span{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--bs-main-color);
+    color: var(--bs-white);
+}
+
+.card{
+    border-radius: 10px;
+    border: 2px solid #D7D7D7;
+    background: #FFF;
+    box-shadow: 5px 9px 40px 0px rgba(0, 0, 0, 0.08);
+}
+
+.card > .mid > p{
+    color: #676767;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.card > .mid > span{
+    color: var(--bs-light-grey);
+    font-size: 14px;
+}
+
+@media (max-width: 767.98px) { 
+
+    #hero-section{
+        height: 130vh;
+    }
+
+    #courses{
+        background-color: var(--bs-light-blue);
+        height: 200vh !important;
+    }
+
+    .beginner-card{
+        margin-bottom: 30px;
+    }
+
+    #partners {
+        height: 200vh;
+    }
+
+    #alumni {
+        height: 130vh;
+    }
+
+    .form-card{
+        margin-top: 50px;
+    }
+ }
+
+@media (max-width: 991.98px) { 
+
+
+    #courses{
+        background-color: var(--bs-light-blue);
+        height: 150vh;
+    }
+
+    .beginner-card{
+        margin-bottom: 30px;
+    }
+
+    #partners {
+        height: 80vh;
+    }
+
+    #alumni {
+        height: 130vh;
+    }
+
+    .form-card{
+        margin-top: 50px;
+    }
+ }
+
+@media (max-width: 1199.98px) {  }
+
+@media (max-width: 1399.98px) {  }
